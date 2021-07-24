@@ -46,7 +46,7 @@ namespace Arbol2
         }
         public Nodo(string valor)
         {
-            Console.WriteLine("Estoy en el constructor.");
+            Console.WriteLine("Soy el constructor");
             Valor = valor;
         }
 
@@ -55,15 +55,15 @@ namespace Arbol2
             get { return _valor; }
             set
             {
-                Console.WriteLine("Estoy en la propiedad.");
+                Console.WriteLine("soy la propiedad");
                 _valor = value;
             }
         }
         public Nodo Izquierdo { get; set; }
         public Nodo Derecho { get; set; }
-        public string V { get; }
+        public string V { get; set; }
     }
 }
 
-}
+
 
